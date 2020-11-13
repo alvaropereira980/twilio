@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  web:
+    container_name: nodetest
+    restart: always
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongodbTest
+    image: mongo
+    ports:
+      - "27018:27017"
+    logging:
+      driver: none

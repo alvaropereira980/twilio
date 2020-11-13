@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{!--Bootwathc --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css">
+    {{!--Text security css--}}
+    <link rel="stylesheet" href="https://github.com/noppa/text-security/blob/master/dist/text-security.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>SMS Node</title>
+
+</head>
+<body>
+{{>navigation}}
+<div class="container p-4">
+    {{{body}}}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
